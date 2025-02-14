@@ -9,16 +9,12 @@ const navigation = [
   { name: 'Certificate', href: '#', },
   { name: 'Contact', href: '#', },
 ]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 export default function Navbar() {
   return (
-    <div className="">
-      <h1 className="absolute md:ml-10 text-white self-center font-poppins font-bold text-2xl top-4 pl-4">Portfolio</h1>
-      <Disclosure as="nav">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 md:px-8">
+    <div className="relative">
+      <h1 className="absolute md:ml-18 text-white self-center font-poppins font-bold text-2xl top-4 pl-4">Portfolio</h1>
+      <Disclosure as="nav" className={`relative`}>
+      <div className="mx-auto px-2 sm:px-6 md:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
             {/* Mobile menu button*/}
@@ -36,11 +32,7 @@ export default function Navbar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
-                    className={classNames(
-                      'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'rounded-md px-3 py-2 text-sm font-medium',
-                    )}
+                    className='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
                   >
                     {item.name}
                   </a>
@@ -51,18 +43,14 @@ export default function Navbar() {
         </div>
       </div>
 
-      <DisclosurePanel className="md:hidden origin-top transition duration-200 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0" transition>
+      <DisclosurePanel className="md:hidden bg-gray-950 w-full origin-top absolute z-50 transition duration-200 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0" transition>
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? 'page' : undefined}
-              className={classNames(
-                'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
-              )}
+              className= 'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
             >
               {item.name}
             </DisclosureButton>

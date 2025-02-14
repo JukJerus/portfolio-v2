@@ -5,3 +5,11 @@
 @theme{
   --font-poppins: 'Poppins', sans-serif;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: var(--font-poppins);
+}
