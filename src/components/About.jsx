@@ -8,9 +8,8 @@ import { BiLogoGmail } from "react-icons/bi";
 export default function About() {
   return (
     <>
-      <div className="mt-15 px-4">
-        <h2 className="text-white font-bold text-3xl text-center font-xl items-center">
-          {" "}
+      <div className="px-4 mt-40">
+        <h2 className="text-white font-bold text-3xl text-center items-center">
           <span className="text-amber-400">About</span> Me
         </h2>
         <div className="flex flex-col md:flex-row-reverse mt-2 md:mt-8 justify-evenly">
@@ -23,7 +22,7 @@ export default function About() {
               Welcome to my portfolio! You can call me Maulana and I&apos;m a Final year Computer
               Science student at Jakarta State University who has an interest in Front End Web
               Developer. During my studies, I have developed skills in programming, algorithms and
-              database systems through various academic projects. I&apos;m currently focuss learning React
+              database systems through various academic projects. I&apos;m currently learning React
               JS framework and Tailwind CSS. I am able to communicate well, work together in a team,
               and am interested in learning new things.
             </p>
