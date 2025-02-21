@@ -45,7 +45,7 @@ export default function Skill() {
   return (
     <>
       <div className="p-3 mt-20">
-        <h2 className="bg-gradient-to-r from-amber-500 via-yellow-300 via-65% to-white inline text-transparent bg-clip-text font-bold text-3xl mx-35 md:mx-150 border-2">Skills</h2>
+        <h1 className="bg-gradient-to-r from-amber-500 via-yellow-300 via-65% to-white inline text-transparent bg-clip-text font-bold text-3xl mx-35 md:mx-150 border-2">Skills</h1>
         <div className="flex md:flex-row flex-col md:mx-40 mt-10 flex-wrap gap-4 w-s">
           {skills.map((skill, index) => {
             const Icon = skill.icon;

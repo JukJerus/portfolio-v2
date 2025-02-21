@@ -3,6 +3,9 @@ import Jumbotron from "./components/Jumbotron";
 import About from "./components/About";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
+import Certificate from "./components/Certificate";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 // import { useState, useEffect } from "react";
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
       <About />
       <Skill />
       <Project />
+      <Certificate />
+      <Contact />
+      <Footer />
     </div>
     //   )}
     // </div>

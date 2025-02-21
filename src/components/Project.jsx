@@ -40,7 +40,7 @@ const projects = [
 export default function Project() {
   return (
     <div className="p-3 mt-20">
-      <h1 className="bg-gradient-to-r from-amber-500 via-yellow-300 via-65% to-white inline text-transparent bg-clip-text font-bold text-3xl mx-29 md:mx-143">
+      <h1 className="bg-gradient-to-r from-amber-500 via-yellow-300 via-65% to-white inline text-transparent bg-clip-text font-bold text-3xl mx-29 md:mx-146">
         Projects
       </h1>
       <div className="mt-10 flex flex-col flex-wrap md:flex-row items-center justify-center gap-4 w-s">
@@ -57,7 +57,7 @@ export default function Project() {
               <p className="mb-3 font-normal text-gray-400">{project.desc}</p>
               <a
                 href={project.link} target="_blank"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-amber-500 rounded-lg hover:bg-amber-400 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-amber-500 rounded-lg hover:bg-amber-400 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer"
               >
                 See Detail
                 <svg

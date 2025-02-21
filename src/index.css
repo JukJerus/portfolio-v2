@@ -2,6 +2,13 @@
 
 @import "tailwindcss";
 
+@import "flowbite/src/themes/default";
+
+@plugin "flowbite/plugin";
+
+@source "../node_modules/flowbite";
+
+
 @keyframes grow {
   from { width: 0%; }
   to { width: var(--progress-width, 100%); }
