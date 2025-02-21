@@ -1,3 +1,7 @@
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 let id = 0;
 const projects = [
   {
@@ -38,6 +42,12 @@ const projects = [
 ];
 
 export default function Project() {
+    useEffect(() => {
+      AOS.init({
+        duration: 2000,
+        once: false,
+      });
+    }, []);
   return (
     <div className="p-3 mt-20">
       <h1 className="bg-gradient-to-r from-amber-500 via-yellow-300 via-65% to-white inline text-transparent bg-clip-text font-bold text-3xl mx-29 md:mx-146">
@@ -47,6 +57,7 @@ export default function Project() {
         {projects.map((project) => (
           <div
             key={project.id}
+            data-aos='flip-down'
             className="max-w-xs border rounded-lg shadow-sm bg-gray-800 border-gray-700"
           >
             <img className="rounded-t-lg" src={project.img} alt="" />

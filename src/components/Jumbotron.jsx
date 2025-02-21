@@ -1,6 +1,9 @@
 import Typed from "typed.js";
 import { useRef, useEffect } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Jumbotron() {
   const el = useRef(null);
 
@@ -18,8 +21,14 @@ export default function Jumbotron() {
     };
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+    });
+  }, []);
   return (
-    <div>
+    <div data-aos='fade-up'>
       <div className="container mx-auto justify-around md:mt-10 md:mb-20">
         <div className="relative flex flex-col md:flex-row-reverse items-center md:justify-center">
           <div className="relative text-center text-white self-center md:w-140 mb-2">

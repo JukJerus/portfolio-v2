@@ -4,11 +4,20 @@ import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BiLogoGithub } from "react-icons/bi";
 import { BiLogoGmail } from "react-icons/bi";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <>
-      <div className="px-4 mt-40">
+      <div className="px-4 mt-40" data-aos="fade-up">
         <h2 className="text-white font-bold text-3xl text-center items-center">
           <span className="text-amber-400">About</span> Me
         </h2>

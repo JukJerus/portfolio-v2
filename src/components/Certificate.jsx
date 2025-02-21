@@ -1,3 +1,7 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const certificates = [
   {
     index: 0,
@@ -32,8 +36,14 @@ const certificates = [
 ];
 
 export default function Certificate() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+    });
+  }, []);
   return (
-    <div className="p-3 mt-20">
+    <div data-aos='zoom-in' className="p-3 mt-20">
       <h1 className="bg-gradient-to-r from-amber-500 via-yellow-300 via-65% to-white inline text-transparent bg-clip-text font-bold text-3xl mx-22 md:mx-144">
         Certificates
       </h1>
