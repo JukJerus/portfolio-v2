@@ -17,26 +17,26 @@ const skills = [
     icon: SiJavascript,
     color: "text-amber-500",
     bgColor: "bg-amber-500",
-    value: 70,
+    value: 62,
   },
-  { name: "Figma", icon: SiFigma, color: "text-emerald-500", bgColor: "bg-emerald-500", value: 75 },
-  { name: "React", icon: SiReact, color: "text-blue-500", bgColor: "bg-blue-500", value: 65 },
+  { name: "Figma", icon: SiFigma, color: "text-emerald-500", bgColor: "bg-emerald-500", value: 70},
+  { name: "React", icon: SiReact, color: "text-blue-500", bgColor: "bg-blue-500", value: 60 },
   {
     name: "Tailwind",
     icon: SiTailwindcss,
     color: "text-blue-800",
     bgColor: "bg-blue-800",
-    value: 80,
+    value: 70,
   },
-  { name: "Vite", icon: SiVite, color: "text-yellow-500", bgColor: "bg-yellow-500", value: 50 },
+  { name: "Vite", icon: SiVite, color: "text-yellow-500", bgColor: "bg-yellow-500", value: 57 },
   {
     name: "Bootstrap",
     icon: SiBootstrap,
     color: "text-violet-700",
     bgColor: "bg-violet-700",
-    value: 80,
+    value: 75,
   },
-  { name: "Git", icon: SiGit, color: "text-red-500", bgColor: "bg-red-500", value: 70 },
+  { name: "Git", icon: SiGit, color: "text-red-500", bgColor: "bg-red-500", value: 64 },
 ];
 
 export default function Skill() {
@@ -59,7 +59,7 @@ export default function Skill() {
 
     return () => intervals.forEach((interval) => clearInterval(interval));
   }, []);
-  
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -67,8 +67,8 @@ export default function Skill() {
     });
   }, []);
   return (
-    <>
-      <div className="p-3 mt-20" data-aos="fade-up-right">
+    <div id="skill">
+      <div className="p-3 mt-20 md:mt-50" data-aos="fade-up-right">
         <h1 className="bg-gradient-to-r from-amber-500 via-yellow-300 via-65% to-white inline text-transparent bg-clip-text font-bold text-3xl mx-35 md:mx-150 border-2">
           Skills
         </h1>
@@ -104,6 +104,6 @@ export default function Skill() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

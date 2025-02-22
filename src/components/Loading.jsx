@@ -20,6 +20,7 @@ export default function Loading() {
           />
         </svg>
         <span className="sr-only">Loading...</span>
+        <h2>Bentar...</h2>
       </div>
     </div>
   );

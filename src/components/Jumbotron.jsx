@@ -48,7 +48,7 @@ export default function Jumbotron() {
           <div className="relative flex flex-col items-center h-80 w-full md:w-120">
             <div className="relative w-55 h-58 md:w-60 top-15 rounded-t-full bg-amber-400"></div>
             <img
-              src="./src/assets/nobg6.png"
+              src="/img/nobg6.png"
               alt="profpict"
               className="size-80 md:size-90 absolute -translate-x-1.5 top-0"
             />

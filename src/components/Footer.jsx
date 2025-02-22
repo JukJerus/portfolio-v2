@@ -6,6 +6,34 @@ import {
   BiLogoTwitter,
 } from "react-icons/bi";
 
+const socmed = [
+  {
+    name: "Facebook",
+    icon: BiLogoFacebook,
+    link: "https://www.facebook.com/shafwanmaul/",
+  },
+  {
+    name: "Discord",
+    icon: BiLogoDiscordAlt,
+    link: "https://discordapp.com/users/418718275263004702",
+  },
+  {
+    name: "Twitter",
+    icon: BiLogoTwitter,
+    link: "https://x.com/shafwanjuice",
+  },
+  {
+    name: "GitHub",
+    icon: BiLogoGithub,
+    link: "https://github.com/JukJerus",
+  },
+  {
+    name: "Linkedin",
+    icon: BiLogoLinkedin,
+    link: "https://www.linkedin.com/in/shafwan-maul/",
+  },
+];
+
 export default function Footer() {
   return (
     <>
@@ -15,32 +43,21 @@ export default function Footer() {
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2023{" "}
-              <a href="https://flowbite.com/" className="hover:underline">
+              <a href="/" className="hover:underline">
                 JukJerus™
               </a>{" "}
               {""}| All Rights Reserved.
             </span>
-            <div className="flex mt-4 sm:justify-center sm:mt-0">
-              <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <BiLogoFacebook className="size-5" />
-                <span className="sr-only">Facebook page</span>
-              </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <BiLogoDiscordAlt className="size-5" />
-                <span className="sr-only">Discord community</span>
-              </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <BiLogoTwitter className="size-5" />
-                <span className="sr-only">Twitter page</span>
-              </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <BiLogoGithub className="size-5" />
-                <span className="sr-only">GitHub account</span>
-              </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <BiLogoLinkedin className="size-5" />
-                <span className="sr-only">Dribbble account</span>
-              </a>
+            <div className="flex mt-4 gap-3 md:gap-5">
+              {socmed.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <a key={index} href={item.link} className="text-gray-500 hover:text-white">
+                    <Icon className="size-5" />
+                    <span className="sr-only">{item.name}</span>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>

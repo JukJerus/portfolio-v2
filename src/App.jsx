@@ -6,6 +6,7 @@ import Project from "./components/Project";
 import Certificate from "./components/Certificate";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+// import Loading from "./components/Loading";
 // import { useState, useEffect } from "react";
 
 function App() {
@@ -23,16 +24,16 @@ function App() {
     //       <Loading />
     //     </div>
     //   ) : (
-    <div className="bg-linear-to-b from-gray-950 to-gray-800">
-      <Navbar />
-      <Jumbotron />
-      <About />
-      <Skill />
-      <Project />
-      <Certificate />
-      <Contact />
-      <Footer />
-    </div>
+        <div className="bg-linear-to-b from-gray-950 to-gray-800">
+          <Navbar />
+          <Jumbotron />
+          <About />
+          <Skill />
+          <Project />
+          <Certificate />
+          <Contact />
+          <Footer />
+        </div>
     //   )}
     // </div>
   );

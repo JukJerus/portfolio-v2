@@ -5,32 +5,32 @@ import { useEffect } from "react";
 const certificates = [
   {
     index: 0,
-    src: "./src/assets/belajarAI.png",
+    src: "/img/belajarAI.png",
     alt: "BelajarAI",
   },
   {
     index: 1,
-    src: "./src/assets/belajarAWS.png",
+    src: "/img/belajarAWS.png",
     alt: "Learn AWS",
   },
   {
     index: 2,
-    src: "./src/assets/belajarJS.png",
+    src: "/img/belajarJS.png",
     alt: "Learn JS",
   },
   {
     index: 3,
-    src: "./src/assets/belajarReact.png",
+    src: "/img/belajarReact.png",
     alt: "Learn React",
   },
   {
     index: 4,
-    src: "./src/assets/belajarWeb.png",
+    src: "/img/belajarWeb.png",
     alt: "Learn Web",
   },
   {
     index: 5,
-    src: "./src/assets/frontEnd.png",
+    src: "/img/frontEnd.png",
     alt: "Learn FE",
   },
 ];
@@ -43,7 +43,7 @@ export default function Certificate() {
     });
   }, []);
   return (
-    <div data-aos='zoom-in' className="p-3 mt-20">
+    <div id="certificate" data-aos='zoom-in' className="p-3 mt-20">
       <h1 className="bg-gradient-to-r from-amber-500 via-yellow-300 via-65% to-white inline text-transparent bg-clip-text font-bold text-3xl mx-22 md:mx-144">
         Certificates
       </h1>

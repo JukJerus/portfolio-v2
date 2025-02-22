@@ -3,11 +3,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 
 const navigation = [
   { name: 'Home', href: '#', },
-  { name: 'About', href: '#', },
-  { name: 'Skill', href: '#', },
-  { name: 'Project', href: '#', },
-  { name: 'Certificate', href: '#', },
-  { name: 'Contact', href: '#', },
+  { name: 'About', href: '#about', },
+  { name: 'Skill', href: '#skill', },
+  { name: 'Project', href: '#project', },
+  { name: 'Certificate', href: '#certificate', },
+  { name: 'Contact', href: '#contact', },
 ]
 export default function Navbar() {
   return (
